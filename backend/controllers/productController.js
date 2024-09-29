@@ -3,8 +3,9 @@ const Product = require('../models/productModel');
 exports.createProduct = async (req, res) => {
     const { name, price, description, category, imageUrl } = req.body;
 
+    const user_id = req.user._id;
     try {
-        const product = await Product.create({ name, price, description, category, imageUrl });
+        const product = await Product.create({ name, price, description, category, imageUrl, user_id });
         return res.status(201).json({ message: 'Product created successfully', product });
     } catch (error) {
         return res.status(400).json({ error: error.message });
@@ -22,7 +23,9 @@ exports.getAllProducts = async (req, res) => {
 
 exports.getProductById = async (req, res) => {
     const { id } = req.params;
-
+    if(!mongoose.Types.ObjectId.isValid(id)){
+       return res.status(404).json({error: "Invalid Product Id"})
+}
     try {
         const product = await Product.findById(id);
         if (!product) {
@@ -37,7 +40,9 @@ exports.getProductById = async (req, res) => {
 exports.updateProduct = async (req, res) => {
     const { id } = req.params;
     const { name, price, description, category, imageUrl } = req.body;
-
+    if(!mongoose.Types.ObjectId.isValid(id)){
+        return res.status(404).json({error: "Invalid Product Id"})
+}
     try {
         const updatedProduct = await Product.findByIdAndUpdate(
             id,
