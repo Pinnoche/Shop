@@ -1,11 +1,14 @@
 import './index.css'
-
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import Welcome from './Pages/Welcome'
 function App() {
 
   return (
-    <>
-      Welcome
-    </>
+    <Router>
+      <Routes>
+        <Route path='/' element={ <Welcome /> } />
+      </Routes>
+    </Router>
   )
 }
 

@@ -53,3 +53,18 @@ exports.deleteCart = async (req, res) => {
         return res.status(500).json({error: error.message})   
     }
 }
+
+exports.clearCarts = async (req, res) => {
+    const userId = req.user._id;
+    try {
+        const clearedCart = await Cart.deleteMany({ user_id: userId });
+
+        if (clearedCart.deletedCount > 0) {
+            return res.status(200).json({ message: 'Cart cleared successfully' });
+        } 
+            return res.status(404).json({ message: 'No cart items found for this user' });
+
+    } catch (error) {
+        return res.status(500).json({ error: error.message });
+    }
+};
