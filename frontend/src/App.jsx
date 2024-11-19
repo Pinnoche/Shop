@@ -9,8 +9,8 @@ function App() {
 
   return (
     <div>
-    <NavBar/>
-    <CategoryGood/>  
+    <NavBar />
+    <CategoryGood />  
     <Router>
       <Routes>
         <Route path='/' element={ <Welcome /> } />

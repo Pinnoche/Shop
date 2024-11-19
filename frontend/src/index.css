@@ -1,22 +1,3 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-.slick-prev {
-    @apply text-black bg-gray-300 w-12 h-12 rounded-full flex justify-center items-center z-50;
-  }
-  
-  .slick-next {
-    @apply text-black bg-gray-300 w-12 h-12 rounded-full flex justify-center items-center z-50;
-  }
-  
-  .slick-prev::before,
-  .slick-next::before {
-    @apply text-2xl font-bold text-black;
-    content: "";
-  }
-  
-  .slick-prev:hover,
-  .slick-next:hover {
-    @apply bg-gray-500;
-  }
