@@ -1,9 +1,7 @@
-import React from 'react';
-
 const NavBar = () => {
   return (
-    <header className="w-full bg-white bg-opacity-90 px-10 fixed top-0 ">
-      <nav className="flex justify-between items-center h-[74px] ">
+    <header className="w-full bg-white backdrop:blur-lg bg-opacity-90 px-10 fixed top-0 z-40 ">
+      <nav className="flex justify-between items-center h-[74px]">
         <div className="text-[20px] font-semibold text-gray-800">Shopping Mall</div>
         <div className="hidden md:flex space-x-8">
           <a href="#home" className="text-gray-800 text-[16px]">Home</a>

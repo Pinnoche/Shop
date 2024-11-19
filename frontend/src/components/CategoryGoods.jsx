@@ -4,11 +4,11 @@ import phone from "../img/photo.jpg"
 function CategoryGoods() {
   const deals = [
     {
-      image: phone,
+      image: '',
       title: 'Microwaves',
     },
     {
-      image: '',
+      image: phone,
       title: 'Washing Machines',
     },
     {
