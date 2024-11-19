@@ -1,11 +1,11 @@
 import React from 'react';
 import Category from './Category';
-import phone from '../img/phon'
+// import phone from '../img/phon'
 
 function CategoryGoods() {
   const deals = [
     {
-      image: {phone},
+      image: '',
       title: 'Microwaves',
     },
     {
