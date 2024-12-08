@@ -3,7 +3,7 @@ import deals from "../deals.json"
 function Category() {
   console.log(deals);
   return (
-    <div className="bg-black p-6">
+    <div className="bg-gray-400 p-6 mt-20 rounded-md">
       <h2 className="text-white text-2xl font-semibold mb-6 text-center">Category</h2>
       <div className="grid grid-cols-3 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6">
         {deals.map((deal, index) => (

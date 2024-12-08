@@ -2,7 +2,7 @@ import { useState } from "react";
 import axios from "../axios";
 import verified from "@/assets/icons/verified.png";
 export default function RegOrLogin() {
-  const [hideLogin, setHideLogin] = useState(true);
+  const [hideLogin, setHideLogin] = useState(false);
   const [data, setData] = useState({
     username: "",
     first_name: "",
