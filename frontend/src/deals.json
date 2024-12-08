@@ -1,0 +1,27 @@
+[
+    {
+      "image": "/img/Microwave1.jpg",
+      "title": "Microwaves"
+    },
+
+    {
+      "image": "/img/washing-machine.jpg",
+      "title": "Washing Machines"
+    },
+    {
+      "image": "/img/Freezer.jpg",
+      "title": "Freezers"
+    },
+    {
+      "image": "/img/fan.jpg",
+      "title": "Fans"
+    },
+    {
+      "image": "/img/photo.jpg",
+      "title": "Phones"
+    },
+    {
+      "image": "/img/AC.jpg",
+      "title": "Air Conditioners"
+    }
+]

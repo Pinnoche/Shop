@@ -1,5 +1,6 @@
 import RegOrLogin from "../components/RegOrLogin";
-import CategoryGoods from '../components/CategoryGoods';
+import Category from '../components/Category';
+import GoodSlider from "../components/GoodSlide";
 import datas from "../data.json";
 import Slider from "react-slick";
 import PrevArrow from "../components/PrevArrow";
@@ -21,11 +22,12 @@ function Welcome() {
   };
 
   return (
-    <div className="relative bg-black text-white w-full h-screen">
+    <div className="relative bg-black text-white w-full h-full">
       <div className="w-full absolute top-1/4 left-[30vw] z-20">
         <RegOrLogin />
       </div>
-      <CategoryGoods />  
+      <GoodSlider/>
+      <Category/>  
       <div className="bg-transparent px-10 py-4">
         <Slider {...settings}>
           {datas.map((data, index) => (
