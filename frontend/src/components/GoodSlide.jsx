@@ -19,7 +19,7 @@ const GoodSlider = () => {
                 {deals.map((deal, index) => (
                     <div key={index} className="w-full h-full">
                         <img
-                            className="w-full h-full object-center p-10 object-cover"
+                            className="w-full h-full object-center object-cover"
                             src={deal.image}
                             alt={deal.title}
                         />

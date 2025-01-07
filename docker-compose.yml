@@ -4,6 +4,7 @@ services:
     build:
       context: ./frontend
       dockerfile: Dockerfile
+    container_name: frontend_c
     ports:
       - "5173:5173"
     command: npm run dev -- --host 0.0.0.0
@@ -19,13 +20,16 @@ services:
     build:
       context: ./backend
       dockerfile: Dockerfile
+    container_name: backend_c
     ports:
-      - "8580:8580"
+      - "8000:8580"
     volumes:
       - ./backend:/app
       - /app/node_modules
+    env_file:
+      - .env
     environment:
       - NODE_ENV=development
-
+      - MONGO_URI=${MONGO_URI}
 
   

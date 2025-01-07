@@ -25,12 +25,12 @@ function Welcome() {
   };
 
   return (
-    <div className="relative p-6 bg-black text-white w-full">
+    <div className="relative p-6 bg-white text-black w-full">
       <div className="w-full absolute top-1/4 left-[30vw] z-20">
         <RegOrLogin />
       </div>
-      <GoodSlider/>
-      <Category/> 
+      <GoodSlider />
+      <Category /> 
       <div className="w-full my-10 bg-white rounded-md overflow-hidden">
         <div className="p-4 bg-red-500">
           <h2 className="text-black font-semibold text-2xl text-center">
