@@ -14,7 +14,7 @@ const GoodSlider = () => {
     };
 
     return (
-        <div className="h-dvh w-screen p-6 mx-auto mt-20 overflow-hidden">
+        <div className="h-dvh w-full  mx-auto mt-20 overflow-hidden">
             <Slider {...settings}>
                 {deals.map((deal, index) => (
                     <div key={index} className="w-full h-full">

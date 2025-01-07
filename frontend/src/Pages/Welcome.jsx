@@ -25,7 +25,7 @@ function Welcome() {
   };
 
   return (
-    <div className="relative p-6 bg-white text-black w-full">
+    <div className="relative w-[94%] mx-[3%] bg-white text-black">
       <div className="w-full absolute top-1/4 left-[30vw] z-20">
         <RegOrLogin />
       </div>
