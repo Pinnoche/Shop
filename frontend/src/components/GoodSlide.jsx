@@ -14,14 +14,14 @@ const GoodSlider = () => {
     };
 
     return (
-        <div className="h-dvh w-full  mx-auto mt-20 overflow-hidden">
+        <div className=" h-dvh w-full  mx-auto mt-20 overflow-hidden">
             <Slider {...settings}>
                 {deals.map((deal, index) => (
                     <div key={index} className="w-full h-full">
                         <img
                             className="w-full h-full object-center object-cover"
-                            src={deal.image}
-                            alt={deal.title}
+                            src={deal.src}
+                            alt={deal.alt}
                         />
                     </div>
                 ))}

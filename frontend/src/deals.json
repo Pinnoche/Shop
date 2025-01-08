@@ -1,27 +1,27 @@
 [
     {
-      "image": "/img/Microwave1.jpg",
-      "title": "Microwaves"
+      "src": "/img/Microwave1.jpg",
+      "alt": "Microwaves"
     },
 
     {
-      "image": "/img/washing-machine.jpg",
-      "title": "Washing Machines"
+      "src": "/img/washing-machine.jpg",
+      "alt": "Washing Machines"
     },
     {
-      "image": "/img/Freezer.jpg",
-      "title": "Freezers"
+      "src": "/img/Freezer.jpg",
+      "alt": "Freezers"
     },
     {
-      "image": "/img/fan.jpg",
-      "title": "Fans"
+      "src": "/img/fan.jpg",
+      "alt": "Fans"
     },
     {
-      "image": "/img/photo.jpg",
-      "title": "Phones"
+      "src": "/img/photo.jpg",
+      "alt": "Phones"
     },
     {
-      "image": "/img/AC.jpg",
-      "title": "Air Conditioners"
+      "src": "/img/AC.jpg",
+      "alt": "Air Conditioners"
     }
 ]
